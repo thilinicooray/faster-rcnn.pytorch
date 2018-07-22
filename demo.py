@@ -285,6 +285,8 @@ if __name__ == '__main__':
       # pdb.set_trace()
       det_tic = time.time()
 
+      print('details: ', im_data.size(), im_info.size(), gt_boxes.size(), num_boxes.size())
+
       rois, cls_prob, bbox_pred, \
       rpn_loss_cls, rpn_loss_box, \
       RCNN_loss_cls, RCNN_loss_bbox, \
